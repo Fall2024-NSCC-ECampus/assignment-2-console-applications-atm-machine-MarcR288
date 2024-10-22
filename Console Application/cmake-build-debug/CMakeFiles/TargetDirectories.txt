@@ -1,0 +1,3 @@
+C:/Users/Marc_/Documents/NSCC/C++/Console Application/cmake-build-debug/CMakeFiles/Console_Application.dir
+C:/Users/Marc_/Documents/NSCC/C++/Console Application/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Marc_/Documents/NSCC/C++/Console Application/cmake-build-debug/CMakeFiles/rebuild_cache.dir

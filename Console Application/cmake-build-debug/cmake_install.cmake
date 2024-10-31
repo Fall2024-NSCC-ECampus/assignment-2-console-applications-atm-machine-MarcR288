@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Marc_/Documents/NSCC/C++/Console Application
+# Install script for directory: C:/Users/Marc_/Documents/NSCC/C++/Console Application/Console Application
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Marc_/Documents/NSCC/C++/Console Application/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Marc_/Documents/NSCC/C++/Console Application/Console Application/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

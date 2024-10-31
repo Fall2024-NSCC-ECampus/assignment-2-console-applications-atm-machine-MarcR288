@@ -1,0 +1,1 @@
+CMakeLists.txt not found in C:\Users\Marc_\Documents\NSCC\C++\Console Application Select CMakeLists.txt

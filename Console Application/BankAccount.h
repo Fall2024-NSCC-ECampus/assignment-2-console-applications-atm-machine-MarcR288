@@ -7,6 +7,7 @@
 
 
 #include<iostream>
+#include <limits>
 #include<string>
 
 using namespace std;
@@ -18,47 +19,23 @@ private:
     double balance;;
 
 public:
+    //Default Constructor
     BankAccount() : balance(0.0) {}
 
     BankAccount(const string& id, const string& pwd) : userId(id), password(pwd), balance(0.0) {}
 
-    BankAccount createBankAccount() {
-        cout << "Please enter your username" << endl;
-        cin >> userId;
-        cout << "Please enter your password" << endl;
-        cin >> password;
+    double getBalance() {return balance;}
 
-        cout << "Thank you! Your account has been created!" << endl;
-        return BankAccount(userId, password);
 
-    }
 
-    bool authorizelogin(const string& id, const string& pwd) {
-        if (id == userId && pwd == password) {
-            cout << "******** LOGIN SUCCESS! ********" << endl;
-            return true;
-        } else {
-            cout << "******** LOGIN FAILED! ********" << endl;
-            return false;
-        }
-    }
-
-    void withdraw(double amount) {
-        if (amount <= balance) {
-            balance -= amount;
-            cout << "Withdraw successful!" << endl;
-            cout <<"Your account balance is: $" << balance << endl;
-        } else {
-            cout << "Withdraw failed! - Insufficient Funds" << endl;
-        }
-    };
-
-    void deposit(double amount) {
-        balance += amount;
-    }
-
-    double getBalance() {
-        return balance;
-    }
+    //Function Declarations
+    BankAccount createBankAccount();
+    void printIntroMenu();
+    void printMainMenu();
+    bool authorizelogin();
+    void deposit();
+    void withdraw();
+    void printBalance();
+    double roundToTwoDecimalPlaces(double amount);
 };
 #endif //BANKACCOUNT_H
